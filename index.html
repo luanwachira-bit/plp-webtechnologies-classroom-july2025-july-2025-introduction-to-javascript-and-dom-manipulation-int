@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FinTrust – Interactive Financial Tools</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>FinTrust</h1>
+    <nav class="main-nav">
+      <a href="#" class="nav-link">Home</a>
+      <a href="#" class="nav-link">Services</a>
+      <a href="#" class="nav-link">Investments</a>
+      <a href="#" class="nav-link">Contact</a>
+    </nav>
+  </header>
+
+  <main class="main-content">
+    <!-- Part 1: User Input & Conditionals -->
+    <section id="part1" class="card">
+      <h2>Part 1: Risk Assessment</h2>
+      <p>Enter your age to get a risk profile recommendation:</p>
+      <input type="number" id="ageInput" placeholder="Your age" min="18" max="100" />
+      <button id="checkRiskBtn">Check Risk Profile</button>
+      <p id="riskResult"></p>
+    </section>
+
+    <!-- Part 2: Functions -->
+    <section id="part2" class="card">
+      <h2>Part 2: Investment Calculator</h2>
+      <p>Calculate future value of an investment (5% annual return):</p>
+      <input type="number" id="investmentAmount" placeholder="Initial amount ($)" />
+      <input type="number" id="years" placeholder="Years" min="1" max="30" />
+      <button id="calculateBtn">Calculate</button>
+      <p id="calculationResult"></p>
+    </section>
+
+    <!-- Part 3: Loops -->
+    <section id="part3" class="card">
+      <h2>Part 3: Financial Goals List</h2>
+      <p>Click to generate common financial goals:</p>
+      <button id="generateGoalsBtn">Generate Goals</button>
+      <ul id="goalsList"></ul>
+    </section>
+
+    <!-- Part 4: DOM Interactions -->
+    <section id="part4" class="card">
+      <h2>Part 4: Interactive Features</h2>
+      <button id="toggleThemeBtn">Toggle Dark Mode</button>
+      <button id="addTestimonialBtn">Add Testimonial</button>
+      <div id="testimonialContainer"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 FinTrust Financial Services Dantedone, ALL RIGHTS RESERVED.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
